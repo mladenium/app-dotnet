@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'as-mladenija-euw-dev-be-webapp-001'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E97341D0669E43D093A138D23E06F75C }}
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
           package: .
