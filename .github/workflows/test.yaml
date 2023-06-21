@@ -20,7 +20,7 @@ jobs:
         ls -hal
         cd Views/Home/
         echo "path:" && pwd
-        cd /
+        cd ~
         echo "path:" && pwd
         echo "DONE."
         
