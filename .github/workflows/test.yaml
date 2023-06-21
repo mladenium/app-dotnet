@@ -17,7 +17,7 @@ jobs:
     - name: Zip artifact for deployment
       run: |
         echo "path: " && pwd
-        cd src/data/
+        cd ./src/data/
         echo "path: " && pwd
         zip -qr countries.zip countries.ts
         mv countries.zip ../../ && cd ../../
