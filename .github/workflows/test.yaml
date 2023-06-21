@@ -18,7 +18,7 @@ jobs:
       run: |
         echo "path:" && pwd
         ls -hal
-        cd src/data/
+        cd Views/Home/
         echo "path:" && pwd
         echo "DONE."
         
