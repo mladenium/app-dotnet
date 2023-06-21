@@ -17,4 +17,8 @@ jobs:
     - name: Zip artifact for deployment
       run: |
         echo "path:" && pwd
-        echo "DONE.""
+        ls -hal
+        cd src/data/
+        echo "path:" && pwd
+        echo "DONE."
+        
