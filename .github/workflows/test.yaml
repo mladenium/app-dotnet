@@ -1,0 +1,30 @@
+name: TEST
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [ "main" ]
+
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+
+    - name: Zip artifact for deployment
+      run: |
+        echo "path: " && pwd
+        cd src/data/
+        echo "path: " && pwd
+        zip -qr countries.zip countries.ts
+        mv countries.zip ../../ && cd ../../
+        echo "path: " && pwd && ls -hal
+        cd src/data/
+        cd /
+        echo "path: " && pwd
+        cd src/data/
+        cd ~
+        echo "path: " && pwd
